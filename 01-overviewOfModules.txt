@@ -1,0 +1,72 @@
+An Overview of Modules in JavaScript
+
+Module
+- Reusable piece of code that encapsulates implementation details.
+
+- Usually a standalone file, but it doesn't have to be.
+
+- Needs to import to use module, and then can export (Public API) values or functions. 
+
+
+Why use modules?
+- Compose software: Modules are small building blocks that we put together to build complex applications
+
+- Isolate components: Modules can be developed in isolation without thinking about the entire codebase;
+
+- Abstract code: Implement low-level code in modules and import these abstractions into other modules.
+
+- Organized code: Modules naturally lead to a more organized codebase.
+
+- Reuse code: Modules allow us to easily reuse the same code, even across multiple projects.
+
+
+Native JavaScript (ES6) Modules
+
+ES6 Modules
+- Modules stored in files, exactly one module per file.
+
+ES6 Module vs Script
+
+Top-level variables
+*ES6: Scoped to module (private)
+*Script: Global
+
+Default mode
+*ES6: Strict mode
+*Script: "Sloppy" mode
+
+Top-level this
+*ES6: undefined
+*Script: window
+
+Imports and exports
+*ES6: Yes - need to happen at top-level, imports are hoisted (always moved at the top of the file, wherever you're declaring it)
+*Script: No
+
+HTML Linking
+*ES6: <script type="module">
+*Script: <script>
+
+File downloading
+*ES6: Asynchronous
+*Script: Synchronous (unless async or defer tag is used)
+
+
+How ES6 Modules are Imported
+
+1. index.js contains import from files
+2. Parsing index.js
+    - Asynchronous downloading (ex. math.js)
+    - linking imports to math.js exports (live connection)
+    - Execution math.js
+
+3. Importing modules before main code execution
+4. Execute index.js
+
+*Importing Modules Before Execution
+- Modules are imported synchronously
+- Possible thanks to top-level ("static") imports, which make imports known before execution
+- This makes bundling and dead code elimination possible.
+
+
+
