@@ -1,0 +1,23 @@
+{
+  "name": "17-modernjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "02-importExport.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yozzyurubuza/modernJS-tools-part17.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yozzyurubuza/modernJS-tools-part17/issues"
+  },
+  "homepage": "https://github.com/yozzyurubuza/modernJS-tools-part17#readme",
+  "dependencies": {
+    "leaflet": "^1.7.1",
+    "lodash-es": "^4.17.21"
+  }
+}
